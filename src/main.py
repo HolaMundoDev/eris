@@ -9,7 +9,7 @@ load_dotenv()
 # Create bot client
 prefix = getenv("BOT_PREFIX")
 description = getenv("BOT_DESCRIPTION")
-client = commands.Bot(command_prefix=prefix, description=description)
+client = commands.Bot(command_prefix=prefix, description=description, help_command=None)
 
 
 # On bot ready
@@ -41,7 +41,7 @@ async def on_member_join(member):
 
 
 # Load the extensions or cogs
-cogs = ["cogs.ping"]
+cogs = ["cogs.ping", "cogs.avatar", "cogs.moderation", "cogs.help"]
 for i in cogs:
     try:
         client.load_extension(i)
