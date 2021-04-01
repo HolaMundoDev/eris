@@ -1,4 +1,3 @@
-from logging import disable
 from os import getenv
 from discord.ext import commands
 import discord
@@ -11,6 +10,7 @@ load_dotenv()
 prefix = getenv("BOT_PREFIX")
 description = getenv("BOT_DESCRIPTION")
 client = commands.Bot(command_prefix=prefix, description=description)
+
 
 # On bot ready
 @client.event
@@ -36,18 +36,8 @@ async def on_member_join(member):
         channel = client.get_channel(791070017877442600)
         await channel.send(embed=newUserMessage)
         print("Sent message to " + member.name)
-    except:
-        print("Couldn't message " + member.name)
-
-
-# On member leave
-@client.event
-async def on_member_leave(member):
-    embed = discord.Embed(
-        title="😢 Adios " + member.mention + "!",
-        description="Espero que vuelvas pronto",
-        color=discord.Color.red(),
-    )
+    except Exception as err:
+        print("Couldn't message " + member.name + "Error: " + err)
 
 
 # Load the extensions or cogs
