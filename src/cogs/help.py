@@ -1,15 +1,16 @@
 import discord
 from discord.ext import commands
 
+
 class help_command(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-    
+
     @commands.command(name="help")
-    async def help_command(self,ctx):
+    async def help_command(self, ctx):
         comandos = """
         Los comandos de este maravilloso bot:
-        
+                
         Ping: Muestra el ping del bot
         Avatar: Muestra el avatar de otra persona
         Help: Muestra este mensaje
@@ -19,12 +20,12 @@ class help_command(commands.Cog):
         Chao Mundo
         """
         embed = discord.Embed(
-            title = "Comando de Ayuda de este bot",
-            description = comandos,
-            color = discord.Color.random()
+            title="Comando de Ayuda de este bot",
+            description=comandos,
+            color=discord.Color.random(),
         )
-        await ctx.send(embed = embed)
-        
+        await ctx.send(embed=embed)
+
+
 def setup(bot):
     bot.add_cog(help_command(bot))
-        
