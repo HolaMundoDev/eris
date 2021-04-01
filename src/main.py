@@ -17,6 +17,7 @@ client = commands.Bot(command_prefix=prefix, description=description)
 async def on_ready():
     print(f"We have logged in as {client.user}")
 
+
 # On member Join
 @client.event
 async def on_member_join(member):
@@ -38,6 +39,7 @@ async def on_member_join(member):
     except:
         print("Couldn't message " + member.name)
 
+
 # On member leave
 @client.event
 async def on_member_leave(member):
@@ -54,7 +56,7 @@ for i in cogs:
     try:
         client.load_extension(i)
     except Exception as err:
-        print(f'An error has occurred {err}')
+        print(f"An error has occurred {err}")
 
 # Run the bot
 if __name__ == "__main__":
