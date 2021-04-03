@@ -41,7 +41,14 @@ async def on_member_join(member):
 
 
 # Load the extensions or cogs
-cogs = ["cogs.ping", "cogs.avatar", "cogs.moderation", "cogs.help"]
+cogs = [
+    "cogs.ping",
+    "cogs.avatar",
+    "cogs.moderation",
+    "cogs.help",
+    "cogs.jokes",
+    "cogs.cita",
+]
 for i in cogs:
     try:
         client.load_extension(i)
