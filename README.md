@@ -4,4 +4,4 @@
 
 Read the [CODE OF CONDUCT](CODE_OF_CONDUCT.md) and the [CONTRIBUTIONS GUIDE](contribs.md) if pass all test can merge the pull request for any feature make a issue
 
-### Made with :hearth: in Ecuador and Colombia
+### Made with ❤ in Ecuador and Colombia
