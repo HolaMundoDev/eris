@@ -108,7 +108,7 @@ To contribute documentation:
 * Make sure your changes are formatted correctly and consistently with the rest of the documentation.
 * Re-read what you wrote, and run a spellchecker on it to make sure you didn't miss anything.
 * Write clear, concise commit message(s) using [conventional-changelog format](https://github.com/conventional-changelog/conventional-changelog-angular/blob/master/convention.md). Documentation commits should use `docs(<component>): <message>`.
-* Go to https://github.com/TeoDev1611/discord-bot-1/pulls and open a new pull request with your changes.
+* Go to https://github.com/HolaMundoDev/discord-bot/pulls and open a new pull request with your changes.
 * If your PR is connected to an open issue, add a line in your PR's description that says `Fixes: #123`, where `#123` is the number of the issue you're fixing.
 
 Once you've filed the PR:
@@ -207,7 +207,7 @@ To clean up issues and PRs:
   * not marked as `starter` or `help wanted` (these might stick around for a while, in general, as they're intended to be available)
   * no explicit messages in the comments asking for it to be left open
   * does not belong to a milestone
-* Leave a message when closing saying "Cleaning up stale issue. Please reopen or ping us if and when you're ready to resume this. See https://github.com/TeoDev1611/discord-bot-1/blob/latest/CONTRIBUTING.md#clean-up-issues-and-prs for more details."
+* Leave a message when closing saying "Cleaning up stale issue. Please reopen or ping us if and when you're ready to resume this. See https://github.com/HolaMundoDev/discord-bot/blob/latest/CONTRIBUTING.md#clean-up-issues-and-prs for more details."
 
 ## Review Pull Requests
 
