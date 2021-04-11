@@ -12,6 +12,7 @@ lint = "flake8 src/"
 "discord.py" = "1.6.0"
 python-dotenv = "==0.16.0"
 requests = "*"
+flask = "*"
 
 [dev-packages]
 flake8 = "3.9.0"
