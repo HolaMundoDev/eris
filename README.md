@@ -1,4 +1,4 @@
-# welcome to the discord-bot of the Hola mundo Server
+# Welcome to the discord-bot of the Hola mundo Server
 
 ## For help in this bot 
 
