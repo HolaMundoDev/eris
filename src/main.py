@@ -15,6 +15,13 @@ client = commands.Bot(command_prefix=prefix, description=description, help_comma
 # On bot ready
 @client.event
 async def on_ready():
+    await client.change_presence(
+        activity=discord.Activity(
+            type=discord.ActivityType.watching,
+            url="https://www.youtube.com/channel/UC4FHiPgS1KXkUMx3dxBUtPg",
+            name="Viendo Hola Mundo en YouTube",
+        )
+    )
     print(f"We have logged in as {client.user}")
 
 
