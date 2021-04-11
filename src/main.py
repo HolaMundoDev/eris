@@ -4,7 +4,7 @@ import discord
 from keep_alive import keep_alive
 
 # Load enviroments from .env file
-with open('credentials.json') as f:
+with open('src/credentials.json') as f:
     global data
     data = json.load(f)
 
