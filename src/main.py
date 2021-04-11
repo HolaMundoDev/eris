@@ -1,4 +1,4 @@
-from os import getenv, name
+from os import getenv
 from discord.ext import commands
 import discord
 from dotenv import load_dotenv
