@@ -3,6 +3,7 @@ from discord.ext import commands
 import discord
 from dotenv import load_dotenv
 from keep_alive import keep_alive
+
 # Load enviroments from .env file
 load_dotenv()
 
