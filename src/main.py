@@ -2,6 +2,7 @@ from os import getenv
 from discord.ext import commands
 import discord
 from dotenv import load_dotenv
+from keep_alive import keep_alive
 
 # Load enviroments from .env file
 load_dotenv()
@@ -62,6 +63,7 @@ for i in cogs:
     except Exception as err:
         print(f"An error has occurred {err}")
 
+keep_alive()
 # Run the bot
 if __name__ == "__main__":
     client.run(getenv("BOT_TOKEN"))
