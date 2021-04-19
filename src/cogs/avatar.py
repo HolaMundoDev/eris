@@ -14,7 +14,7 @@ class avatar_command(commands.Cog):
     async def avatar(self, ctx, member: discord.Member = None):
         if member is None:
             embed = discord.Embed(
-                title=" El comando usado deberia ser **!avatar [miembro]**",
+                title=" El comando usado deberia ser **$avatar [miembro]**",
                 color=discord.Color.random(),
                 footer=ctx.message.created_at,
             )

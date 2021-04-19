@@ -18,6 +18,7 @@ class help_command(commands.Cog):
         Kick: Kickea al usuario si tiene los permisos
         Cita: Muestra una cita inspiradora de varios filósofos
         Joke: Muestra chistes que te divertirán
+        Wiki: Busca un termino en la wikipedia
         
         Chao Mundo
         """
