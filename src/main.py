@@ -4,13 +4,13 @@ import discord
 from keep_alive import keep_alive
 
 # Load enviroments from .env file
-with open('src/credentials.json') as f:
+with open("src/credentials.json") as f:
     global data
     data = json.load(f)
 
 # Create bot client
-prefix = data['BOT_PREFIX']
-description = data['BOT_DESCRIPTION']
+prefix = data["BOT_PREFIX"]
+description = data["BOT_DESCRIPTION"]
 client = commands.Bot(command_prefix=prefix, description=description, help_command=None)
 
 
@@ -21,7 +21,7 @@ async def on_ready():
         activity=discord.Activity(
             type=discord.ActivityType.watching,
             url="https://www.youtube.com/channel/UC4FHiPgS1KXkUMx3dxBUtPg",
-            name="Viendo Hola Mundo en YouTube",
+            name="Hola Mundo en YouTube",
         )
     )
     print(f"We have logged in as {client.user}")
@@ -57,6 +57,7 @@ cogs = [
     "cogs.help",
     "cogs.jokes",
     "cogs.cita",
+    "cogs.wiki",
 ]
 for i in cogs:
     try:
@@ -67,4 +68,4 @@ for i in cogs:
 keep_alive()
 # Run the bot
 if __name__ == "__main__":
-    client.run(data['BOT_TOKEN'])
+    client.run(data["BOT_TOKEN"])
