@@ -11,14 +11,15 @@ class help_command(commands.Cog):
         comandos = """
         Los comandos de este maravilloso bot:
                 
-        Ping: Muestra el ping del bot
-        Avatar: Muestra el avatar de otra persona
-        Help: Muestra este mensaje
-        Ban: Banea al usuario si tiene los permisos
-        Kick: Kickea al usuario si tiene los permisos
-        Cita: Muestra una cita inspiradora de varios filósofos
-        Joke: Muestra chistes que te divertirán
-        Wiki: Busca un termino en la wikipedia
+        **ping:** Muestra el ping del bot
+        **avatar:** Muestra el avatar de otra persona
+        **help:** Muestra este mensaje
+        **ban:** Banea al usuario si tiene los permisos
+        **kick:** Kickea al usuario si tiene los permisos
+        **cita:** Muestra una cita inspiradora de varios filósofos
+        **joke:** Muestra chistes que te divertirán
+        **wiki:** Busca un termino en la wikipedia
+        **npm:** Busca algún paquete en la API de NPM
         
         Chao Mundo
         """

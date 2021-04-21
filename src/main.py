@@ -42,7 +42,7 @@ async def on_member_join(member):
 
     print("Recognised that a member called " + member.name + " joined")
     try:
-        channel = client.get_channel(791070017877442600)
+        channel = client.get_channel("791070017877442600")
         await channel.send(embed=newUserMessage)
         print("Sent message to " + member.name)
     except Exception as err:
@@ -58,6 +58,7 @@ cogs = [
     "cogs.jokes",
     "cogs.cita",
     "cogs.wiki",
+    "cogs.npm",
 ]
 for i in cogs:
     try:
