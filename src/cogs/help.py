@@ -20,6 +20,7 @@ class help_command(commands.Cog):
         **joke:** Muestra chistes que te divertirán
         **wiki:** Busca un termino en la wikipedia
         **npm:** Busca algún paquete en la API de NPM
+        **crate:** Busca algún crate en la API de CRATES.IO
         
         Chao Mundo
         """

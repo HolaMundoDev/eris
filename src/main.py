@@ -59,6 +59,7 @@ cogs = [
     "cogs.cita",
     "cogs.wiki",
     "cogs.npm",
+    "cogs.crates",
 ]
 for i in cogs:
     try:
