@@ -22,6 +22,7 @@ class help_command(commands.Cog):
         **npm:** Busca algún paquete en la API de NPM
         **crate:** Busca algún crate en la API de CRATES.IO
         **pypi:** Busca alguna librería en la API de PYPI
+        **english:** Muestra la definción de una palabra en  inglés su significado y muchas cosas más
         
         Chao Mundo
         """
