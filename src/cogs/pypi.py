@@ -8,9 +8,9 @@ class PypiCommmand(commands.Cog):
         self.bot = bot
 
     @commands.command(name="pypi")
-    async def pypi(self, bot, ctx, *, args):
+    async def pypi(self, ctx, *, args):
         try:
-            req = requests.get("https://pypi.org/pypi/{args}/json")
+            req = requests.get(f"https://pypi.org/pypi/{args}/json")
             if req.status_code == 200:
                 resp = req.json()
                 info = resp["info"]
@@ -37,7 +37,7 @@ class PypiCommmand(commands.Cog):
                     title="Error :x:",
                     description="Error en encontrar el paquete o la API",
                     footer=f"API STATUS: {req.status_code}",
-                    color=discord.Color.random(),
+                    color=discord.Color.red(),
                 )
                 embed.set_thumbnail(
                     url="https://media1.tenor.com/images/46ce1235c5697ce170c6e84f4b4fb4e7/tenor.gif"
