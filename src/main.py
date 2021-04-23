@@ -61,6 +61,7 @@ cogs = [
     "cogs.npm",
     "cogs.crates",
     "cogs.pypi",
+    "cogs.synonymous",
 ]
 for i in cogs:
     try:
