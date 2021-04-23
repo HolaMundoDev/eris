@@ -60,6 +60,7 @@ cogs = [
     "cogs.wiki",
     "cogs.npm",
     "cogs.crates",
+    "cogs.pypi",
 ]
 for i in cogs:
     try:
