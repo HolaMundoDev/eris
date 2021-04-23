@@ -21,6 +21,7 @@ class help_command(commands.Cog):
         **wiki:** Busca un termino en la wikipedia
         **npm:** Busca algún paquete en la API de NPM
         **crate:** Busca algún crate en la API de CRATES.IO
+        **pypi:** Busca alguna librería en la API de PYPI
         
         Chao Mundo
         """
