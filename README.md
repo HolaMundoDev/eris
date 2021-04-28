@@ -14,5 +14,5 @@
 Para contribuir a este proyecto siempre debes tener en cuenta las reglas de [contribución](contribs.md), en el momento en que envíes tu pull request a este repositorio será probado por flujos de trabajo de automatización usando Github Actions, luego será analizado y tomó la decisión correspondiente
 
 ## Créditos
-- @jheysonsaav - Líder del proyecto
-- @TeoDev1611 - Líder del proyecto
+- **[@jheysonsaav](https://github.com/jheysonsaav)** - Líder del proyecto
+- **[@TeoDev1611](https://github.com/TeoDev1611)** - Líder del proyecto
