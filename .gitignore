@@ -131,3 +131,6 @@ dmypy.json
 # Editor
 .idea/
 .vscode/
+.vim/
+*.json
+src/cogs/info.py
