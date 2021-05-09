@@ -1,1 +1,0 @@
-worker: pipenv run start
