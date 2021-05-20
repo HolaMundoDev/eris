@@ -1,16 +1,15 @@
-import json
-from discord.ext import commands
-import discord
 from keep_alive import keep_alive
+from discord.ext import commands
+from dotenv import load_dotenv
+import discord
+import os
 
 # Load enviroments from .env file
-with open("src/credentials.json") as f:
-    global data
-    data = json.load(f)
+load_dotenv()
 
 # Create bot client
-prefix = data["BOT_PREFIX"]
-description = data["BOT_DESCRIPTION"]
+prefix = os.getenv("BOT_PREFIX")
+description = os.getenv("BOT_DESCRIPTION")
 client = commands.Bot(command_prefix=prefix, description=description, help_command=None)
 
 
@@ -72,4 +71,4 @@ for i in cogs:
 keep_alive()
 # Run the bot
 if __name__ == "__main__":
-    client.run(data["BOT_TOKEN"])
+    client.run(os.getenv("BOT_TOKEN"))

@@ -1,6 +1,6 @@
 FROM python:3.9
 
-WORKDIR /usr/src/bot
+WORKDIR /app
 
 COPY Pipfile Pipfile.lock ./
 
@@ -9,4 +9,4 @@ pipenv install --system --deploy --ignore-pipfile
 
 COPY . .
 
-CMD ["pipenv", "run", "start"]
+CMD ["python", "src/main.py"]
