@@ -16,7 +16,7 @@ flask = "2.0.3"
 wikipedia = "1.4.0"
 
 [dev-packages]
-flake8 = "3.9.0"
+flake8 = "5.0.3"
 black = "21.6b0"
 
 [requires]
